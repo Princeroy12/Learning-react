@@ -1,5 +1,15 @@
 import React from 'react';
 import './App.css';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+//import FRParentInput from './components/FRParentInput';
+//import PortalsDemo from './components/PortalsDemo';
+//import RefsDemo from './components/RefsDemo';
+//import Focusfile from './components/Focusfile';
+// import Fragmentdemo from './components/fragmentdemo';
+// import Column from './components/Column';
+//import PureComp from './components/PureComp';
+//import ParentComp from './components/ParentComp';
 //import Greet from './components/greet';
 //import Welcome from './components/welcome';
 //import Hello from './components/hello'
@@ -12,15 +22,29 @@ import './App.css';
 //import Usergreeting from './components/usergreeting'
 // import Namelist from './components/nameList'
 //import Form from './components/form'
-import LifecycleA from './components/lifecycleA'
+//import LifecycleA from './components/lifecycleA'
 
 function App() {
   return (
     <div className="App">
-
-     <LifecycleA />
-        
+         <ErrorBoundary>
+        <Hero heroName="superman"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+        <Hero heroName="batman"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+        <Hero heroName="joker"/>
+        </ErrorBoundary>
         {/*
+        <PortalsDemo />
+        <FRParentInput />
+        <Focusfile />
+         <RefsDemo />
+        <ParentComp />
+        <Fragmentdemo />
+       <Column />
+     <LifecycleA />
           <Form />
         <Namelist />
         <Usergreeting />
