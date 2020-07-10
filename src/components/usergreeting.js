@@ -17,7 +17,7 @@ import React, { Component } from 'react'
             </div>
         )} else{
             return(
-                <div>Welcome Guest</div>
+                <div><h1>Welcome Guest</h1></div>
             )
         }
     }
