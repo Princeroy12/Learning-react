@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 //import FRParentInput from './components/FRParentInput';
 //import PortalsDemo from './components/PortalsDemo';
 //import RefsDemo from './components/RefsDemo';
@@ -27,6 +29,9 @@ import ErrorBoundary from './components/ErrorBoundary';
 function App() {
   return (
     <div className="App">
+        <ClickCounter name="Prince" />
+        <HoverCounter  name="Prince"/>
+        {/*
          <ErrorBoundary>
         <Hero heroName="superman"/>
         </ErrorBoundary>
@@ -36,7 +41,6 @@ function App() {
         <ErrorBoundary>
         <Hero heroName="joker"/>
         </ErrorBoundary>
-        {/*
         <PortalsDemo />
         <FRParentInput />
         <Focusfile />
