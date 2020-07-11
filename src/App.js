@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+//import ClickCounter from './components/ClickCounter';
+//import HoverCounter from './components/HoverCounter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
 //import FRParentInput from './components/FRParentInput';
 //import PortalsDemo from './components/PortalsDemo';
 //import RefsDemo from './components/RefsDemo';
@@ -29,9 +31,13 @@ import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
+        <UserProvider value="Prince">
+          <ComponentC />
+          </UserProvider>
+
+        {/*
         <ClickCounter name="Prince" />
         <HoverCounter  name="Prince"/>
-        {/*
          <ErrorBoundary>
         <Hero heroName="superman"/>
         </ErrorBoundary>
